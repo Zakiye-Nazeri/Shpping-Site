@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .rtl {
+      direction: rtl;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    transition: all 0.3s;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 400px;
+  
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+  
+  .overlay{
+    @apply invisible opacity-0 fixed inset-0 bg-black/40 w-full h-full z-10 transition-all;
+  }
+  
+  .overlay--visible{
+    @apply visible opacity-100;
+  }
+
+  .text-green-rosheh{
+    color: #69765a;
+  }
+  
+  .bg-green-rosheh{
+    color: #69765a;
+  }
